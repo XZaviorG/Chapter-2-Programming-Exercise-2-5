@@ -1,5 +1,0 @@
-print("This program calculates an object's momentum.")
-mass = float(input("Enter mass in Kg:"))
-velocity = int(input("Enter velocity in m/s:"))
-momentum = (mass * velocity)
-print("The objects Momentum is", momentum, "kg m/s")
