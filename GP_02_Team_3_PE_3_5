@@ -1,0 +1,9 @@
+InitialOrganisms = int(input("Enter the initial number of orangisms: "))
+GrowthRate = float(input("Enter rate of growth [a real number > 1]"))
+RateHours = int(input("Enter amount of hours to achieve the rate of growth: "))
+TotalHours = int(input("Enter total hours of growth: "))
+
+TotalGrowth = TotalHours // RateHours
+TotalPopulation = InitialOrganisms * (GrowthRate ** TotalGrowth)
+
+print("The total Population is", TotalPopulation)
