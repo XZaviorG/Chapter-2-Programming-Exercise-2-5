@@ -1,0 +1,19 @@
+input_File = input("Enter the input file name: ")
+output_File = input("Enter the output file name: ")
+distance = int(input("Enter the distance value: "))
+
+outputFileContent = ""
+
+with open(output_File, "w") as outputFile:
+    pass
+with open(input_File, "r") as inputFile:
+    inputFileContent = inputFile.read(1)
+    while len(inputFileContent) > 0:
+
+        ch = ord(inputFileContent)
+        cipher = ch - distance
+
+        with open(output_File, "a") as outputFile:
+            outputFile.write(chr(cipher))
+        
+        inputFileContent = inputFile.read(1)
